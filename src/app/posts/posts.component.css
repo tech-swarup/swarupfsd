@@ -1,0 +1,38 @@
+/* mat-card {
+    width: 80%;
+    margin: auto;
+} */
+
+mat-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+mat-form-field,
+textarea {
+    width: 100%;
+    margin: auto;
+}
+
+.button-center {
+    margin: auto;
+    display: block;
+}
+
+:host {
+    display: block;
+    margin-top: 2rem;
+}
+
+input[type="file"] {
+    visibility: hidden;
+}
+
+.image-preview {
+    height: 5rem;
+    margin: 1rem 0;
+}
+
+.image-preview img {
+    height: 100%;
+}

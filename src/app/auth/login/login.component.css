@@ -1,0 +1,22 @@
+mat-form-field {
+    width: 100%;
+}
+
+mat-spinner {
+    margin: auto;
+}
+
+.button-center {
+    margin: auto;
+    display: block;
+}
+
+:host {
+    display: block;
+    margin-top: 2rem;
+}
+
+mat-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+}

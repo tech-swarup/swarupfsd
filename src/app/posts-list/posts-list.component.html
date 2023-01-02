@@ -1,0 +1,19 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let post of posts">
+        <mat-expansion-panel-header>
+            {{post.title}}
+        </mat-expansion-panel-header>
+
+        <div class="user-image">
+            <img [src]="post.imagePath" [alt]="post.title">
+        </div>
+
+        <p>{{post.content}}</p>
+        <mat-action-row>
+            <a mat-button color="primary" [routerLink]="['/edit',post.id]">Edit</a>
+            <button mat-button color="warn" (click)="onDelete(post.id)">Delete</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<p class="info-text mat-body" *ngIf="posts.length<=0">No Post to be displayed</p>
